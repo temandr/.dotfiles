@@ -14,7 +14,7 @@ set number	" show line numbers
 set showcmd	" used to show number of characters highlighted
 set incsearch	" search while typing
 set hlsearch	" highlight what you search
-set relativenumber " relative numbering
+"set relativenumber " relative numbering
 
 syntax on	" enable syntax processing
 
@@ -46,3 +46,4 @@ set background=dark
 
 " use the semi-colon to start a command
 :nnoremap ; :
+
