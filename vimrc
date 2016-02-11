@@ -47,3 +47,5 @@ set background=dark
 " use the semi-colon to start a command
 :nnoremap ; :
 
+" stop repeating comments to new lines
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
