@@ -12,4 +12,7 @@ echo "Setup vim with pluginstall"
 vim +PlugClean +qall
 vim +PlugInstall +qall
 
+echo "Setup tmux with tmux-plugins"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 
