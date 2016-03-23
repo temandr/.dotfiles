@@ -1,8 +1,14 @@
-echo "linking vimrc"
+echo "linking vim"
 rm -f ~/.vimrc
 rm -rf ~/.vim
 ln -s ${PWD}/vimrc ~/.vimrc 
 ln -s ${PWD}/vim ~/.vim 
+
+echo "linking nvim"
+rm -f ~/.nvimrc
+rm -rf ~/.nvim
+ln -s ${PWD}/nvimrc ~/.nvimrc 
+ln -s ${PWD}/nvim ~/.nvim 
 
 echo "linking tmux.conf"
 rm -f ~/.tmux.conf
