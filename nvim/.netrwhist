@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/temandr/Documents/eoh_website/app'
+let g:netrw_dirhist_2='/Users/temandr/Documents/eoh_website/app/controllers'
+let g:netrw_dirhist_3='/Users/temandr/Documents/eoh_website/app/views/home'
+let g:netrw_dirhist_4='/Users/temandr/.ssh'
