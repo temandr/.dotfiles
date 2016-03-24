@@ -4,7 +4,8 @@ set nocompatible
 "-- vim-plug Stuff
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "-- General Settings
@@ -19,6 +20,8 @@ set hlsearch	" highlight what you search
 syntax on	" enable syntax processing
 
 set mouse=a	" enable the mouse
+
+let mapleader="," " change the leader 
 
 " Disable the fucking bells
 set noeb vb t_vb=
@@ -49,3 +52,7 @@ set background=dark
 
 " stop repeating comments to new lines
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+"FZF stuff
+:noremap <Leader>. :GitFiles<cr>
+:noremap <Leader>/ :Files<cr>
