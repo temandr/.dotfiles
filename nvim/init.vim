@@ -1,1 +1,0 @@
-/Users/temandr/.dotfiles/vimrc

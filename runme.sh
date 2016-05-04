@@ -29,6 +29,7 @@ run_nvim() {
   fi
   rm -rf ~/.config/nvim
   ln -s ${PWD}/nvim ~/.config/nvim
+  ln -s ${PWD}/vimrc ~/.config/nvim/init.vim
 }
 
 run_tmux() {
