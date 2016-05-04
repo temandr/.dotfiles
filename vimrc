@@ -56,3 +56,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "FZF stuff
 :noremap <Leader>. :GitFiles<cr>
 :noremap <Leader>/ :Files<cr>
+
+"Nvim stuff
+if has("nvim")
+  :tnoremap <Esc> <C-\><C-n>
+endif
