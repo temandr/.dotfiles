@@ -1,11 +1,11 @@
 show_help() {
 cat << EOF
-Usage: [-hvnt] 
+Usage: [-havnt] 
     -h          display this help and exit
     -a          run all 
-    -v          perform vim udpate
-    -n          perform nvim udpate
-    -t          perform tmux udpate
+    -v          perform vim init
+    -n          perform nvim iinit
+    -t          perform tmux init
 EOF
 }
 
@@ -50,8 +50,8 @@ run_tmux() {
 
 while getopts "havnt" opt; do
   case "$opt" in
-    a) run_all; exit 0;;
     h) show_help; exit 0;;
+    a) run_all; exit 0;;
     v) run_vim;;
     n) run_nvim;;  
     t) run_tmux;;
