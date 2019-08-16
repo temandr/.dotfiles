@@ -2,11 +2,20 @@
 set nocompatible
 
 "-- vim-plug Stuff
-call plug#begin('~/.vim/plugged')
+call plug#begin()
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'Pprovost/vim-ps1'
 call plug#end()
+let g:deoplete#enable_at_startup = 1
 
 "-- General Settings
 set backspace=indent,eol,start	" enable the fucking backspace
@@ -28,8 +37,8 @@ set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
 
 " Tabbing stuffff
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
 
